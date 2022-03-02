@@ -1,0 +1,36 @@
+{
+  "name": "rollup-learn",
+  "version": "1.0.3",
+  "description": "learn",
+  "author": "haihuo0910",
+  "license": "ISC",
+  "main": "dist/rollup-learn.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "rollup --config scripts/rollup.config.dev.js --watch",
+    "build": "rollup --config scripts/rollup.config.prod.js"
+  },
+  "peerDependencies": {
+    "lodash": "^4.17.21"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.1",
+    "rollup": "^2.68.0",
+    "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haihuo0910/rollup-learn.git"
+  }
+}
