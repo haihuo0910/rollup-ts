@@ -3,7 +3,6 @@
         "noUnusedLocals": true, // 未使用变量报错
         "removeComments": false, // 删除注释
         "declaration": true, // 生成定义文件
-        "declarationDir": "", // 定义文件输出目录
         "lib": [
             "es5",
             "es6",

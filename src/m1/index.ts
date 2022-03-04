@@ -3,7 +3,7 @@ export interface People {
 }
 
 export const m1 = () => {
-    console.log('12')
+    console.log('12');
 }
 
 export const m2 = (interval: number, num: number) => {

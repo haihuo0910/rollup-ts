@@ -1,6 +1,7 @@
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import typescript from '@rollup/plugin-typescript';
+// import typescript from '@rollup/plugin-typescript';
+import typescript from 'rollup-plugin-typescript2';// 支持生成类型文件
 import dts from "rollup-plugin-dts";
 import clear from 'rollup-plugin-clear';
 import baseConfig from './rollup.config';
@@ -17,9 +18,9 @@ export default [
     ],
     external: ["lodash"],// 保持外部引用状态
   },
-  {
-    input: "src/index.d.ts",
-    output: [{ file: "dist/index.d.ts", format: "es" }],
-    plugins: [dts()],
-  },
+  // {
+  //   input: "src/index.d.ts",
+  //   output: [{ file: "dist/index.d.ts", format: "es" }],
+  //   plugins: [dts()],
+  // },
 ]
