@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
-        "noUnusedLocals": true, // 未使用变量报错
-        "removeComments": false, // 删除注释
-        "declaration": true, // 生成定义文件
+        "noUnusedLocals": true, // 若有未使用的局部变量则抛错
+        "removeComments": false, // 删除所有注释，除了以 /!*开头的版权信息
+        "declaration": true, // 生成相应的 .d.ts文件
         "lib": [
             "es5",
             "es6",
